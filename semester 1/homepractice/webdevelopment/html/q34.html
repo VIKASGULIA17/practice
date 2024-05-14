@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Formats</title>
+</head>
+<body>
+    <form>
+        <label for="date">Enter a date:</label>
+        <input type="date" id="date" name="date">
+        <button type="button" onclick="displayDate()">Display Date</button>
+    </form>
+
+    <script>
+        function displayDate() {
+            var inputDate = document.getElementById("date").value;
+            var dateObj = new Date(inputDate);
+
+            var fullDate = dateObj.toDateString();
+            var shortDate = dateObj.toLocaleDateString();
+            var time = dateObj.toLocaleTimeString();
+
+            document.getElementById("fullDate").innerHTML = "Full Date: " + fullDate;
+            document.getElementById("shortDate").innerHTML = "Short Date: " + shortDate;
+            document.getElementById("time").innerHTML = "Time: " + time;
+        }
+    </script>
+
+    <h2>Date Formats:</h2>
+    <p id="fullDate"></p>
+    <p id="shortDate"></p>
+    <p id="time"></p>
+</body>
+</html>

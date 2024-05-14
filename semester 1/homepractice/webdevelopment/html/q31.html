@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Calculator</title>
+    <script>
+        function factorial(num) {
+            if (num === 0 || num === 1) {
+                return 1;
+            } else {
+                return num * factorial(num - 1);
+            }
+        }
+
+        for (let i = 7; i <= 10; i++) {
+            document.write(`Factorial of ${i} is: ${factorial(i)}`).value=print; 
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

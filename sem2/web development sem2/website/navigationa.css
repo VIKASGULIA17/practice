@@ -1,0 +1,229 @@
+@import url("https:fonts.googleapis.com/css?family=Verdana:100,200,300,400,500,600,700,800,900");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --clr: rgb(1, 18, 9);
+}
+
+body {
+    /* display: flex; */
+    justify-content: right;
+    align-items: center;
+    min-height: 20vh;
+    background: rgb(248, 246, 245);
+}
+
+.navigation {
+    background-color: black;
+    width: 100vw;
+    height: 75px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navigation ul {
+    display: flex;
+    width: 350px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+}
+
+.navigation ul li.active a .icon {
+    transform: translateY(-32px);
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    border: 6px solid black;
+    transition: 0.5s;
+}
+
+.indicator::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+.indicator::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+.navigation ul li:nth-child(1).active~.indicator {
+    transform: translateX(calc(70px *0));
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+    transform: translateX(calc(70px *1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+    transform: translateX(calc(70px *2));
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(70px *3));
+}
+
+.navigation ul li:nth-child(5).active~.indicator {
+    transform: translateX(calc(70px *4));
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.travel {
+    display: flex;
+    flex-direction: column;
+    height: 41vh;
+}
+
+/* THIS IS THEOF FIRST IMAGE WITH DESTINATION*/
+.destination {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 2px;
+    padding-left: 5%;
+}
+
+/* THIS IS THE OF FIRST IMAGE WITH ABOUT*/
+.about {
+    height: 41vh;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+
+/* THIS IS THE INTERNAL CLASS OF FIRST IMAGE WITH TRAVEL BLOG*/
+
+.abo {
+    height: 250px;
+    width: 400px;
+}
+
+/* THIS IS THE TEXT OF TRAVEL BLOG*/
+
+.title {
+    font-size: 24px;
+    margin-top: 3vh;
+    padding-left: 20vh;
+    display: flex;
+}
+
+/* THIS IS THE TEXT OF ABOUT US*/
+.abouttext {
+
+    padding-left: 49vh;
+    margin-bottom: 20vh;
+}
+
+/* THIS IS THE TEXT OF DESTINATION*/
+.des {
+    padding-left: 45vh;
+}
+
+/* THIS IS THE ID OF BACKGROUND VIDEO*/
+#myVideo {
+    padding-top: 3px;
+    position: relative;
+    right: 0;
+    min-width: 100%;
+    display: flexbox;
+}
+
+/* THIS IS THE CALSS OF TEXT SHOWED ON VIDEO*/
+.explore {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* THIS IS THE CLASS OF SUB-TEXT SHOWED ON VIDEO*/
+.exploremore {
+    padding: 30px;
+    font-weight: 200;
+    font-size: 25px;
+    font-style: normal;
+}

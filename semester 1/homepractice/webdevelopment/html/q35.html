@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <style>
+    .warning {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Registration Form</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" required><br><br>
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" required><br><br>
+
+    <input type="submit" value="Submit" onclick="submitForm()"><br><br>
+  </form>
+
+  <div id="formDetails"></div>
+
+  <script>
+    function submitForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var phone = document.getElementById("phone").value;
+      var course = document.getElementById("course").value;
+
+      if (name === "" || email === "" || phone === "" || course === "") {
+        document.getElementById("formDetails").innerHTML = "<p class='warning'>Please fill in all fields!</p>";
+      } else {
+        var details = "<p><strong>Name:</strong> " + name + "</p>";
+        details += "<p><strong>Email:</strong> " + email + "</p>";
+        details += "<p><strong>Phone:</strong> " + phone + "</p>";
+        details += "<p><strong>Course:</strong> " + course + "</p>";
+
+        document.getElementById("formDetails").innerHTML = details;
+      }
+    }
+  </script>
+</body>
+</html>

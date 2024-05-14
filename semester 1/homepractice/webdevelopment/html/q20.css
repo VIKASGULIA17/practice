@@ -1,0 +1,37 @@
+/* Reset default styles */
+body, h1, p {
+margin: 0;
+padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+background-color: #f2f2f2;
+font-family: Arial, sans-serif;
+}
+
+/* Set header styles */
+h1 {
+font-size: 24px;
+font-weight: bold;
+color: #333333;
+padding: 20px;
+}
+
+/* Set course container styles */
+li {
+    color: brown;
+display: flex;
+flex-wrap: wrap;
+/* justify-content: center; */
+margin: 20px;
+}
+footer {
+    color: brown;
+display: flex;
+flex-wrap: wrap;
+/* justify-content: center; */
+margin: 20px;
+}
+
+

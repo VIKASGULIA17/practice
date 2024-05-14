@@ -1,0 +1,170 @@
+@media screen and (min-width: 600px){
+body::shadow;
+}
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: cadetblue;
+}
+/* THIS IS CONTAINER OF BLOG POST*/
+.container {
+    display: flex;
+    background-color: black;
+    margin-right: 0%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-top: 2%;
+    padding: 8px;
+    list-style-type: none;
+    color: aliceblue;
+}
+/* THIS IS THE OF FIRST IMAGE WITH TRAVEL BLOG*/
+.travel {
+    display: flex;
+    margin-top: 30px;
+    height: 41vh;
+}
+/* THIS IS THEOF FIRST IMAGE WITH DESTINATION*/
+.destination {
+    height: 2px;
+    padding-left: 5%;
+}
+/* THIS IS THE OF FIRST IMAGE WITH ABOUT*/
+.about {
+    height: 41vh;
+    padding-left: 5%;
+    height: 250px;
+}
+/* THIS IS THE INTERNAL CLASS OF FIRST IMAGE WITH TRAVEL BLOG*/
+
+.abo {
+    height: 250px;
+    width: 400px;
+}
+/* THIS IS THE TEXT OF TRAVEL BLOG*/
+
+.title {
+    font-size: 24px;
+    margin-top: 3vh;
+    padding-left: 20vh;
+    display: flex;
+}
+/* THIS IS THE TEXT OF ABOUT US*/
+.abouttext {
+
+    padding-left: 49vh;
+    margin-bottom: 20vh;
+}
+/* THIS IS THE TEXT OF DESTINATION*/
+.des {
+    padding-left: 45vh;
+}
+/* THIS IS THE ID OF BACKGROUND VIDEO*/
+#myVideo {
+    padding-top: 3px;
+    position: relative;
+    right: 0;
+    min-width: 100%;
+    display: flexbox;
+}
+/* THIS IS THE CALSS OF TEXT SHOWED ON VIDEO*/
+.explore {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+}
+/* THIS IS THE CALSS OF SUB-TEXT SHOWED ON VIDEO*/
+.exploremore {
+    padding: 30px;
+    font-weight: 200;
+    font-size: 25px;
+    font-style: normal;
+}
+/* THIS IS THE CLASS OF HEADING OF NEXT SESSION*/
+.travelgde{
+text-align: center;
+font-size: xx-large;
+font-weight: bolder;
+}
+/* THIS IS THE TOP CLASS OF HEADING OF NEXT SESSION */
+.fullcontent{
+    background-color: rgb(240, 238, 238);
+    border-style: double;
+}
+/* THIS IS THE CLASS OF HEADING OF NEXT SESSIONO*/
+.trav{
+margin-top: 5vh;
+text-align: center;
+font-size: x-large;
+}
+/* THIS IS THE HEAD CLASS OF PICTURE HEADING OF NEXT SESSIONO*/
+
+.piccontainer{
+    display: flex;
+}
+/* THIS IS THE CLASS OF FIRST PICTURE HEADING OF NEXT SESSIONO*/
+
+.first{
+    height: 250px;
+  width: 400px;
+  margin-top: 3vh;
+  padding: 2%;
+  display: flex;
+}
+/* THIS IS THE CLASS OF SECOMD PICTURE HEADING OF NEXT SESSIONO*/
+
+.second{
+    margin-top: 4.4vh;
+    padding-left: 10%;
+    height: 250px;
+  width: 400px;
+  display: flex;
+}
+/* THIS IS THE CLASS OF THIRD PICTURE HEADING OF NEXT SESSIONO*/
+
+.third{
+    margin-top: 4.4vh;
+    padding-left: 10vh;
+    height: 250px;
+  width: 400px;
+  display: flex;
+}
+/* THIS IS THE CLASS OF TEXT OF FIRST PICTURE HEADING OF NEXT SESSIONO*/
+
+.titles {
+    font-size: 24px;
+    margin-top: 3vh;
+    padding-left: 10vh;
+    display: flex;
+}
+/* THIS IS THE CLASS OF TEXT OF THIRD PICTURE HEADING OF NEXT SESSIONO*/
+
+.abouttexts {
+
+    padding-left: 55vh;
+    margin-bottom: 20vh;
+}
+/* THIS IS THE CLASS OF TEXT OF SECOND PICTURE HEADING OF NEXT SESSIONO*/
+
+.dess {
+    padding-left: 44vh;
+}

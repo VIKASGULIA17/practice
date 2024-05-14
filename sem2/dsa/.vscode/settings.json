@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "LINEAR[1].C": "cpp",
+    "DOUBLY[1].C": "cpp",
+    "doubly.C": "cpp",
+    "CIRCULAR[1].C": "cpp",
+    "circularll.C": "cpp",
+    "DSTACK[1].C": "cpp",
+    "dynamicstack.C": "cpp",
+    "CQUEUE[1].C": "cpp",
+    "cqueue.C": "cpp",
+    "LQUEUE[1].C": "cpp"
+  }
+}

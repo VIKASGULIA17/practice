@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usage of Built-in Functions and Dialog Boxes</title>
+    <script>
+        function showAlert() {
+            alert("This is an alert dialog box!");
+        }
+
+        function showConfirm() {
+            var result = confirm("Are you sure you want to proceed?");
+            if (result) {
+                alert("You clicked OK!");
+            } else {
+                alert("You clicked Cancel!");
+            }
+        }
+
+        function showPrompt() {
+            var name = prompt("Please enter your name:");
+            if (name != null && name != "") {
+                alert("Hello, " + name + "!");
+            } else {
+                alert("You did not enter a name!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Usage of Built-in Functions and Dialog Boxes</h1>
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="showConfirm()">Show Confirm</button>
+    <button onclick="showPrompt()">Show Prompt</button>
+</body>
+</html>

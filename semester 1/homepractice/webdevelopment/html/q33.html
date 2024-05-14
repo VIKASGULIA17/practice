@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math & String Functions</title>
+</head>
+<body>
+    <h1>Math Functions</h1>
+    <p>Math.PI: <span id="pi"></span></p>
+    <p>Math.sqrt(16): <span id="sqrt"></span></p>
+    <p>Math.pow(2, 3): <span id="pow"></span></p>
+    <p>Math.random(): <span id="random"></span></p>
+
+    <h1>String Functions</h1>
+    <p>String.length: <span id="length"></span></p>
+    <p>String.toUpperCase(): <span id="toUpperCase"></span></p>
+    <p>String.toLowerCase(): <span id="toLowerCase"></span></p>
+    <p>String.concat("Hello", "World"): <span id="concat"></span></p>
+
+    <script>
+        document.getElementById("pi").innerHTML = Math.PI;
+        document.getElementById("sqrt").innerHTML = Math.sqrt(16);
+        document.getElementById("pow").innerHTML = Math.pow(2, 3);
+        document.getElementById("random").innerHTML = Math.random();
+
+        var str = "Hello, World!";
+        document.getElementById("length").innerHTML = str.length;
+        document.getElementById("toUpperCase").innerHTML = str.toUpperCase();
+        document.getElementById("toLowerCase").innerHTML = str.toLowerCase();
+        document.getElementById("concat").innerHTML = str.concat("Hello", "World");
+    </script>
+</body>
+</html>

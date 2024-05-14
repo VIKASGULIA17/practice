@@ -1,0 +1,76 @@
+
+<html>
+
+<head>
+    <title> Registration form </title>
+</head>
+
+<body>
+    <center>
+        <form action="registrationform.html" method="post">
+            <fieldset style="background-color:yellow;height:38%;width:30%;text-align:center">
+                <legend> Personal details </legend>
+                <label for="full_name">Full Name:</label>
+                <input type="text" maxlength="20" id="full_name" name="full_name"><br><br>
+                <label for="age">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Age:</label>
+                <input type="text" maxlength="2" id="age" name="age"><br><br>
+                <label for="phone no">Phone No:</label>
+                <input type="password" maxlength="10" id="phone no" name="phone no"><br><br>
+                <label for="address">Address:</label>
+                <textarea name="address" cols="30" rows="5"></textarea><br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" checked name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
+            </fieldset>
+            <fieldset style="background-color:cyan;height:32%;width:30%;text-align:right">
+                <legend> Educational Details </legend>
+                <label for="Xth%">Xth%:</label>
+                <input type="text" maxlength="2"><br><br>
+                <label for="XIIth%">XIIth%:</label>
+                <input type="text" maxlength="2"><br><br>
+                <label for="ug course">UG Course:</label>
+                <select id="ug course" name="ug course">
+                    <option>BCA</option>
+                    <option>BBA</option>
+                    <option>B-Tech</option>
+                    <option>B-Com</option>
+                    <option>B-Pharma</option>
+                </select><br><br>
+                <label for="university">University:</label>
+                <select id="university">
+                    <option>select</option>
+                    <option>GGSIPU</option>
+                    <option> DU </option>
+                    <option> AU </option>
+                    <option> VU </option>
+                    <option> KrU </option>
+                </select><br><br>
+                <label for="college">College:</label>
+                <select id="college" size="2">
+                    <option>IITM</option>
+                    <option>DTU</option>
+                    <option>IIT</option>
+                    <option>NSUT</option>
+                    <option>NIT</option>
+                </select><br><br>
+                <label for="shift">Shift:</label>
+                <select id="shift" name="shift">
+                    <option value="">Select</option>
+                    <option value="morning">Morning</option>
+                    <option value="evening">Evening</option>
+                    <br><br>
+                </select>
+            </fieldset>
+            <fieldset style="width:30%">
+                <legend>Hobbies</legend>
+                <input type="checkbox">&nbsp Badminton &nbsp<input type="checkbox">&nbsp Cricket &nbsp<br><br>
+                <input type="checkbox">&nbsp Football &nbsp&nbsp&nbsp&nbsp<input type="checkbox">&nbsp Vollyball &nbsp <br>
+            </fieldset><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </form>
+</body>
+</center>
+
+</html>

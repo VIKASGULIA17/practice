@@ -1,0 +1,35 @@
+#para1 {
+    text-decoration: underline;
+    color: rgb(3, 3, 23);
+    margin-left: 5cm;
+}
+
+#back {
+    background-color: rgb(153, 239, 202);
+    text-align: center;
+}
+
+A {
+    text-decoration: none;
+}
+
+A:hover {
+    text-decoration: underline;
+    color: rgb(0, 109, 128);
+    background-color: #CCFFCC#;
+}
+
+li{
+    color: rgb(255, 102, 0);
+    font-weight: bold;
+}
+
+Ul {
+    color: rgb(153, 255, 0);
+    font-weight: bold;
+}
+
+ul{
+    text-decoration: overline;
+    margin-left: 5cm;
+}
