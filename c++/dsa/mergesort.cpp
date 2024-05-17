@@ -33,6 +33,7 @@ int merge(int arr[], int b, int mid, int e)
     {
         arr[k++] = br[j++];
     }
+    return 0;
 }
 int mergesort(int arr[], int b, int e)
 {
@@ -42,6 +43,7 @@ int mergesort(int arr[], int b, int e)
     mergesort(arr, b, mid);
     mergesort(arr, mid + 1, e);
     merge(arr, b, mid, e);
+    return 0;
 }
 int main()
 {
@@ -56,4 +58,5 @@ int main()
     {
         cout << arr[i] << " ";
     }
+    return 0;
 }
