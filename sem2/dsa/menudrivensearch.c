@@ -65,7 +65,7 @@ int binary(int s, int arr[])
 {
     int beg = 0, end = n - 1, mid;
     mid = (beg + end) / 2;
-    while (beg < end)
+    while (beg <= end)
     {
         if (arr[mid] == s)
         {
