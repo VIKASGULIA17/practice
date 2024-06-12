@@ -20,26 +20,32 @@ int linear()
         printf("element not found\n");
     }
 }
+//2345
+//[56,57,234,345,2345]
+//end=4
+//end=1
+//234
 int binary()
 {
     int beg = 0, end = n - 1;
     int search;
-        int mid = (beg + end) / 2;
+    int mid = (beg + end) / 2;
     printf("enter the number u want to search\n");
     scanf("%d", &search);
     while (beg <= end)
     {
         if (arr[mid] == search)
         {
-            printf("element present at %d\n", mid+1);
+            printf("element present at %d\n", mid + 1);
             break;
         }
         else if (arr[mid] > search)
         {
-            end=mid-1;
+            end = mid - 1;
             mid = (beg + end) / 2;
         }
-        else if(arr[mid]<search){
+        else if (arr[mid] < search)
+        {
             beg = mid + 1;
             mid = (beg + end) / 2;
         }
@@ -51,7 +57,7 @@ int main()
     scanf("%d", &n);
     for (int i = 0; i < n; i++)
     {
-        printf("arr[%d]--:", i+1);
+        printf("arr[%d]--:", i + 1);
         scanf("%d", &arr[i]);
     }
     binary();
