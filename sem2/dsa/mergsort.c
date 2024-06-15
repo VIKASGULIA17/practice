@@ -25,11 +25,11 @@ int merge(int a[], int beg, int mid, int end)
     for (i = 0; i < hl; i++)
     {
         L[i] = a[beg + i]; // copy data to temp arrays
+    }
         for (j = 0; j < sl; j++)
         {
             R[j] = a[mid + 1 + j]; // data from main array to temp arrays
         }
-    }
     i = 0;
     j = 0;
     k = beg;

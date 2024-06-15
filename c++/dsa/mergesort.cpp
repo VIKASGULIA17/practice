@@ -9,7 +9,7 @@ int merge(int arr[], int b, int mid, int e)
     {
         ar[i] = arr[b + i];
     }
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < y; i++)
     {
         br[i] = arr[mid + 1 + i];
     }
@@ -48,13 +48,13 @@ int mergesort(int arr[], int b, int e)
 int main()
 {
     int arr[6] = {17, 2, 34, 8, 4, 67};
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 6; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
     mergesort(arr, 0, 5);
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 6; i++)
     {
         cout << arr[i] << " ";
     }
