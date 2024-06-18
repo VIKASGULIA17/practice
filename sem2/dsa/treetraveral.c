@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include <stdlib.h>
 
 struct TreeNode
@@ -24,7 +23,6 @@ struct TreeNode *insert(struct TreeNode *root, int data)
         root->left = insert(root->left, data);
     else if (data > root->data)
         root->right = insert(root->right, data);
-
     return root;
 }
 void inorder(struct TreeNode *root)

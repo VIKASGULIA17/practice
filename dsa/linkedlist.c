@@ -10,10 +10,7 @@ typedef struct node *nptr;
 nptr head = NULL;
 int insertion(int n)
 {
-    // int n;
     nptr temp = (nptr)malloc(sizeof(int));
-    // printf("enter new data");
-    // scanf("%d",&n);
     temp->data = n;
     temp->next = head;
     head = temp;
@@ -70,7 +67,6 @@ int delbeg()
         printf("list is empty\n");
         return 0;
     }
-
     printf("\n%d is deleted\n", temp->data);
     free(temp);
 }
@@ -83,7 +79,7 @@ int deletionend()
         return 0;
     }
     temp = head;
-    while (temp->next->next != NULL)
+    while (temp->next->next!= NULL)
     {
         temp = temp->next;
     }
@@ -107,7 +103,6 @@ int delmid(int pos){
     }
     printf("%d is deleted\n",temp->next->data);
     temp->next=temp->next->next;
-
 }
 int display()
 {
@@ -122,14 +117,14 @@ int display()
 }
 int main()
 {
-    // insertion(3);
+    insertion(3);
     insertion(2);
     // delbeg();
     insertion(1);
     // delbeg();
     insertionend(4);
     insertionend(5);
-    insertionmid(3, 1);
+    // insertionmid(3, 1);
     // deletionend();
     // delmid(3);
     display();
