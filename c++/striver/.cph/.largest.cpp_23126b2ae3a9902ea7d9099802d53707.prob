@@ -1,0 +1,1 @@
+{"name":"Local: largest","url":"/home/vikas/Desktop/practice/c++/striver/largest.cpp","tests":[{"id":1721459852274,"input":"5 11 12 13 14 22","output":"22"},{"id":1721459904909,"input":"3 22 789 11","output":"789"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/vikas/Desktop/practice/c++/striver/largest.cpp","group":"local","local":true}

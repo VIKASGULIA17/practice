@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int bubble(vector<int> &a)
+int bubble_Sort(vector<int> &a)
 {
     int n = a.size();
     for (int i = 0; i < n - 1; i++)
@@ -20,6 +20,7 @@ int bubble(vector<int> &a)
             break;
         }
     }
+    return 0;
 }
 int main()
 {
@@ -30,9 +31,9 @@ int main()
     {
         cin >> a[i];
     }
-    bubble(a);
+    bubble_Sort(a);
     for (int i = 0; i < n; i++)
     {
-        cout << a[i] << " " << endl;
+        cout << a[i] << " ";
     }
 }

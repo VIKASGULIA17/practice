@@ -21,6 +21,5 @@ int main(){
     {
         d=(-d);
     }
-    
     cout<<d;
 }

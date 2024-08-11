@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int x=0,n=12;
+    int n,x=0;
+    cin>>n;
     for (int i = 1; i*i <= n; i++)
     {
         if (n%i==0)
@@ -12,15 +13,15 @@ int main(){
                 x++;
             }
             
-        }
-        
-        
+        }   
     }
     if (x==2)
     {
         cout<<"prime";
     }
-    
+    else{
+        cout<<"not prime";
+    }
     
     // for (int i = 0; i < 100; i++)
     // {

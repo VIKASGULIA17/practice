@@ -1,0 +1,1 @@
+{"name":"Local: cllins","url":"/home/vikas/Desktop/practice/c++/dsa/linkedlist/cllins.cpp","tests":[{"id":1722701949498,"input":"","output":"1->2->4->5->NULL"},{"id":1722702057693,"input":"","output":"2->3->4->5->NULL"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/vikas/Desktop/practice/c++/dsa/linkedlist/cllins.cpp","group":"local","local":true}

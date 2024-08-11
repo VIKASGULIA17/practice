@@ -25,6 +25,7 @@ int quicksort(int arr[], int first, int last)
         quicksort(arr, first, pi - 1);
         quicksort(arr, pi + 1, last);
     }
+    return 0;
 }
 int main()
 {

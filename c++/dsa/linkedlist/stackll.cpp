@@ -26,7 +26,7 @@ public:
     int push(int value)
     {
         node *n = new node(value);
-        if (this->count > this->capacity)
+        if (this->count >= this->capacity)
         {
             cout << "overflow" << endl;
             return 0;
@@ -34,6 +34,7 @@ public:
         n->next = this->head;
         this->head = n;
         this->count++;
+        return 0;
     }
     int pop()
     {
@@ -46,6 +47,7 @@ public:
         head = head->next;
         free(temp);
         count = count - 1;
+        return 0;
     }
     int display()
     {
@@ -57,6 +59,7 @@ public:
             temp = temp->next;
             i++;
         }
+        return 0;
     }
 };
 int main()
@@ -64,10 +67,10 @@ int main()
     stack ll(4);
     ll.push(10);
     ll.push(20);
-    ll.pop();
+    // ll.pop();
     ll.push(30);
     ll.push(40);
     ll.push(50);
-    ll.pop();
+    // ll.pop();
     ll.display();
 }

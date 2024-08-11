@@ -26,6 +26,7 @@ int insertion(node *&head, int value)
     n->next = head;
     n->prev = nullptr;
     head = n;
+    return 0;
 }
 int insertionend(node *&head, int value)
 {
@@ -43,6 +44,7 @@ int insertionend(node *&head, int value)
     temp->next = n;
     n->prev = temp;
     n->next = nullptr;
+    return 0;
 }
 int insertionmid(node *&head, int value, int pos)
 {
@@ -62,6 +64,7 @@ int insertionmid(node *&head, int value, int pos)
     n->next = temp->next;
     temp->next = n;
     n->prev = temp;
+    return 0;
 }
 int deletion(node *&head)
 {
@@ -93,6 +96,7 @@ int delmid(node *&head, int pos)
     node *temp2 = temp->next;
     temp->next = temp2->next;
     temp2->next->prev = temp->prev;
+    return 0;
 }
 int deletionend(node *&head)
 {
@@ -109,6 +113,7 @@ int deletionend(node *&head)
     node *temp2 = temp->prev;
     temp2->next = nullptr;
     temp->prev = nullptr;
+    return 0;
 }
 int display(node *head)
 {
@@ -119,6 +124,7 @@ int display(node *head)
         temp = temp->next;
     }
     cout << endl;
+    return 0;
 }
 int main()
 {

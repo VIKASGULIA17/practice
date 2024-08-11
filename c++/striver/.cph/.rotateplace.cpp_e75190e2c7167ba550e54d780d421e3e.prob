@@ -1,0 +1,1 @@
+{"name":"Local: rotateplace","url":"/home/vikas/Desktop/practice/c++/striver/rotateplace.cpp","tests":[{"id":1721470999395,"input":"3","output":"4567123"},{"id":1721471137113,"input":"5","output":"6712345"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/vikas/Desktop/practice/c++/striver/rotateplace.cpp","group":"local","local":true}

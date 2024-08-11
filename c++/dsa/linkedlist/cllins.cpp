@@ -37,6 +37,7 @@ int insertion(node *&head, int value)
     end->next = n;
     n->next = head;
     head = n;
+    return 0;
 }
 int insertionend(node *&head, int value)
 {
@@ -52,6 +53,26 @@ int insertionend(node *&head, int value)
     }
     end->next = n;
     n->next = head;
+    return 0;
+}
+int insertion_mid(node *&head,int pos,int value){
+if (head == nullptr)
+    {
+        insertion(head, value);
+        return 0;
+    }
+    node *n = new node(value);
+    node *temp = head;
+    int i = 0;
+    while (i < pos - 1)
+    {
+        temp = temp->next;
+        i++;
+    }
+    n->next = temp->next;
+    temp->next = n;
+    return 0;
+    
 }
 int deletion(node *&head)
 {
@@ -69,6 +90,7 @@ int deletion(node *&head)
     head = head->next;
     end->next = head;
     free(temp);
+    return 0;
 }
 int delend(node *&head)
 {
@@ -85,6 +107,24 @@ int delend(node *&head)
     node* temp=end->next;
     end->next=head;
     free(temp);
+    return 0;
+}
+int delmid(node *&head,int pos){
+    node*temp=head;
+    node*prev=head;
+    int i=1;
+    if(pos==1){
+        deletion(head);
+        return 0;
+    }
+    while(i<pos){
+        prev=temp;
+        temp=temp->next;
+        i++;
+    }
+    prev->next=temp->next;
+    free(temp);
+    return 0;
 }
 int display(node *head)
 {
@@ -93,21 +133,18 @@ int display(node *head)
     {
         cout << temp->value << "->";
         temp = temp->next;
-        // cout << head->value << "->";
     } while (temp != head);
     cout << "NULL" << endl;
+    return 0;
 }
 int main()
 {
     node *head = nullptr;
-    deletion(head);
     insertion(head, 3);
     insertion(head, 2);
     insertion(head, 1);
     insertionend(head, 4);
     insertionend(head, 5);
-    display(head);
-    deletion(head);
-    delend(head);
+    delmid(head,3);
     display(head);
 }

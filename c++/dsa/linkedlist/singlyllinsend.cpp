@@ -11,7 +11,7 @@ public:
         next = NULL;
     }
 };
-int insertionend(node *&head, int val)
+int insertion_end(node *&head, int val)
 {
     node *n = new node(val);
     if (head == NULL)
@@ -54,9 +54,9 @@ int display(node *head)
 int main()
 {
     node *head = NULL;
-    insertionend(head, 1);
-    insertionend(head, 2);
-    insertionend(head, 3);
+    insertion_end(head, 1);
+    insertion_end(head, 2);
+    insertion_end(head, 3);
     display(head);
     deletion(head);
     display(head);

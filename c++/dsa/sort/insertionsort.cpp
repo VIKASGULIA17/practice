@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int insertionsort(vector<int> &arr)
+int insertion_sort(vector<int> &arr)
 {
     int n = arr.size();
     for (int i = 1; i < n; i++)
@@ -15,6 +15,7 @@ int insertionsort(vector<int> &arr)
         }
         arr[j + 1] = temp;
     }
+    return 0;
 }
 int main()
 {
@@ -31,7 +32,7 @@ int main()
     }
     cout << endl;
     
-    insertionsort(arr);
+    insertion_sort(arr);
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";

@@ -47,14 +47,16 @@ int mergesort(int arr[], int b, int e)
 }
 int main()
 {
-    int arr[6] = {17, 2, 34, 8, 4, 67};
-    for (int i = 0; i < 6; i++)
+    int n;
+    cin>>n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
     {
-        cout << arr[i] << " ";
+        cin>>arr[i];
     }
-    cout << endl;
-    mergesort(arr, 0, 5);
-    for (int i = 0; i < 6; i++)
+    
+    mergesort(arr, 0, n);
+    for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
