@@ -1,0 +1,1 @@
+{"name":"Local: charhashing","url":"/home/vikas/Desktop/practice/c++/striver/charhashing.cpp","tests":[{"id":1720679118505,"input":"abcdabehf\n5\na\ng\nh\nb\nc","output":"2\n0\n1\n2\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/vikas/Desktop/practice/c++/striver/charhashing.cpp","group":"local","local":true}

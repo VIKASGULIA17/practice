@@ -1,0 +1,1 @@
+{"name":"Local: hashing","url":"/home/vikas/Desktop/practice/c++/striver/hashing.cpp","tests":[{"id":1720678260565,"input":"5 1 3 2 1 3 5 1 4 2 3 12","output":"2 \n0 \n1\n2 \n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/vikas/Desktop/practice/c++/striver/hashing.cpp","group":"local","local":true}

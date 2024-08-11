@@ -1,0 +1,36 @@
+:root{
+    --bg-black-top:#0F0715;
+    --bg-purple-top:#7746DA;
+    --bg-lightpurple-top:#100817;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color:var(--bg-black-top);
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+.firstpage{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    height: 10vh;
+    width: 100%;
+    margin-left: 80vw;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+.menu{
+
+}

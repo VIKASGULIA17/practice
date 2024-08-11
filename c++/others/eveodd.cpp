@@ -13,4 +13,5 @@ int main()
     {
         cout << a << " is odd";
     }
+    return 0;
 }

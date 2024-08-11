@@ -26,7 +26,7 @@ int insertionend(node *&head, int value)
         temp = temp->next;
     }
     n->next = nullptr;
-    temp->next = n;
+    temp->next = n;return 0;
 }
 int display(node *head)
 {
@@ -45,7 +45,7 @@ int print(node *&head)
         return 0;
     node *temp = head;
     print(temp->next);
-    cout << temp->value << "->";
+    cout << temp->value << "->";return 0;
 }
 int main()
 {
@@ -57,4 +57,5 @@ int main()
     insertionend(head, 5);
     display(head);
     print(head);
+
 }

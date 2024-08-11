@@ -1,0 +1,1 @@
+{"name":"Local: longestplaindrome","url":"/home/vikas/Desktop/practice/c++/leetcode/longestplaindrome.cpp","tests":[{"id":1720714912912,"input":"babad","output":"bab"},{"id":1720714928027,"input":"cbbd","output":"bb"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/vikas/Desktop/practice/c++/leetcode/longestplaindrome.cpp","group":"local","local":true}

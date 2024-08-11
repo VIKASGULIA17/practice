@@ -4,7 +4,10 @@ using namespace std;
 int main()
 {
     vector<int> v;
-    for (int i = 0; i < 5; i++)
+    int n;
+    cout<<"enter number of items in  vector";
+    cin>>n;
+    for (int i = 0; i < n; i++)
     {
         int e;
         cin >> e;
