@@ -13,8 +13,8 @@ int main(){
     //3     2
     //5     1
     //6     1
-    vector<int> v={1,1,3,5,3,6};
-    unordered_map <int,int> mpp;//1st int =element 
+    vector<int> v={1,1,11,3,5,3,6};
+    map <int,int> mpp;//1st int =element 
     for (auto i:v)//i=1,1,3,5,3
     {
        mpp[i]+=1;
