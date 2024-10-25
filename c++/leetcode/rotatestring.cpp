@@ -9,7 +9,6 @@ using namespace std;
         }
         return ;
     }
-
 int main(){
     string s="abcde";
     string goal="cdeab";

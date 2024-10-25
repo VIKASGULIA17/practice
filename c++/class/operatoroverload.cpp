@@ -6,7 +6,6 @@ public:
     int x;
     complex(int a)
     {
-
         x = a;
     }
 };
