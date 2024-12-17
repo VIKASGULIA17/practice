@@ -1,0 +1,5 @@
+# a=0x1c
+# print(a)
+# import datetime
+# print(datetime.time(1,4,2,3))
+help('modules')

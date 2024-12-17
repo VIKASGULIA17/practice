@@ -10,7 +10,9 @@
     "semaphore": "cpp",
     "valarray": "cpp",
     "*.inc": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "iosfwd": "cpp",
+    "*.tcc": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

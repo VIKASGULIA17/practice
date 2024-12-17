@@ -1,16 +1,13 @@
 #include <iostream>
 using namespace std;
-
-// Forward declaration of class B
 class B;
-
 class A {
 private:
     int value;
 public:
     A(){
         value=100; 
-        }
+    }
     friend void displayValue(A& a);  
     friend class B;
 };
